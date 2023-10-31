@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/alarme.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../script/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <nav>
+        <audio id="music">
+            <source  src="../music/Chant-Du-Coq.mp3" type="audio/mpeg">
+        </audio>
+        <audio src="../music/Vintage-Alarm-Clock.mp3" id="music"></audio>
+        <audio src="../music/Squid-Game.mp3" id="music"></audio>
+        <audio src="../music/one-piece.mp3" id="music"></audio>
+        <audio src="../music/Minion-Bottom.mp3" id="music"></audio>
+        <audio src="../music/Biohazard-Alarm.mp3" id="music"></audio>
+        <audio src="../music/Alarm-X-Effect.mp3" id="music"></audio>
+        <audio src="../music/Alarm-Morning.mp3" id="music"></audio>
+        <div id="liste">
+            <div>
+                <div class="son1">
+                    <input type="radio" name="son" id="son" value="0" checked><label>Coq</label>
+                </div>
+                <div class="son2">
+                    <input type="radio"  name="son" id="son" value="1"><label>Clock</label>
+                </div>
+                <div class="son3">
+                    <input type="radio"  name="son" id="son" value="2"><label>Squid Game</label>
+                </div>
+                <div class="son4">
+                    <input type="radio"  name="son" id="son" value="3"><label>One piece</label>
+                </div>
+                <div class="son5">
+                    <input type="radio"  name="son" id="son" value="4"><label>Minion</label>
+                </div>
+                <div class="son6">
+                    <input type="radio"  name="son" id="son" value="5"><label>Biohazard</label>
+                </div>
+                <div class="son7">
+                    <input type="radio"  name="son" id="son" value="6"><label>Alarm</label>
+                </div>
+                <div class="son8">
+                    <input type="radio"  name="son" id="son" value="7"><label>Morning</label>
+                </div>
+            </div>
+            <div>
+                <button id="quit">X</button>
+            </div>
+        </div>
+        <div class="message"></div>
+        <div class="box">
+            <div class="time">
+                <div class="clone">
+                    <label>HH:</label>
+                    <input type="number" name="heure" id="heure" min="0" max="23">
+                    <label>MM:</label>
+                    <input type="number" name="minute" id="minute" min="0" max="59">
+                    <label>SS:</label>
+                    <input type="number" name="seconde" id="seconde" min="0" max="59">
+                    <button id="btnson">
+                        <img src="../img/alarm-bell_icon-icons.com_68596.png" alt="" width="30px" height="30px">
+                    </button>
+                    <button id="ok">
+                        <img src="../img/checked_169780.png" class="imgok" width="30px" height="30px">
+                    </button>
+                </div>
+            </div>
+            <button id="plus">
+                <img src="../img/plus.png" alt="" width="40px" height="40px">
+            </button>
+        </div>
+    </nav>
+    <script src="../script/alarme.js"></script>
+</body>
+</html>

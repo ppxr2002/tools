@@ -1,0 +1,60 @@
+body{
+    background: url("../img/fond-mur-texture-beton-bleu-grunge-vintage-vignette.jpg");
+}
+div.izyrehetra{
+    height: 560px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 42, 73);
+    border: 2px solid;
+    box-shadow: 0px 0px 5px;
+    border-radius: 20px;
+    background-size: cover;
+    margin: 40px;
+}
+div.ecran{
+    background-color: rgba(0,0,0.3);
+    color: #fff;
+    box-shadow: 0 0 3px;
+    margin: 10px;
+    width: 95%;
+    height: 135px;
+    border-radius: 20px;
+}
+p{
+    width: 97%;
+    font-size: 20px;
+    text-align: end;
+}
+div.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+button{
+    background-color: transparent;
+    width: 90px;
+    height: 80px;
+    font-size: 27px;
+    color: #fff;
+    margin: 2px;
+}
+button.del,button.ac{
+    width: 139px;
+}
+button.del{
+    background-color: red;
+}
+button.egal{
+    width: 188px;
+    background-color: grey;
+}

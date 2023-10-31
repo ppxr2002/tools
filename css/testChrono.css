@@ -1,0 +1,42 @@
+@font-face {
+    font-family: lera;
+    src: url('../fonts/digital-7.ttf');
+}
+body{
+    background: url("../img/fond-mur-texture-beton-bleu-grunge-vintage-vignette.jpg");
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.box{
+    margin: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(6, 42, 73);
+    box-shadow: 0px 0px 5px;
+}
+div.affichage{
+    font-family: lera;
+    font-size: 65px;
+    width: 80%;
+    background-color: rgb(32, 5, 5);
+    color: red;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0.3);
+    border: 2px solid #b0bcf0;
+}
+div.button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+div.button button{
+    margin: 10px;
+}
+button#stop{
+    background-color: red;
+}

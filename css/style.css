@@ -1,0 +1,152 @@
+@font-face {
+    font-family: lera;
+    src: url('../fonts/digital-7.ttf');
+}
+div.fond{
+    width: 99vw;
+    height: 77vh;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+}
+body{
+    background: url('../img/fond-mur-texture-beton-bleu-grunge-vintage-vignette.jpg');
+    background-size: cover;
+    height: 97vh;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+button{
+    border: 0px;
+    background-color: transparent;
+}
+
+/* En tete */
+img#icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+#lera-date{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: lera;
+    font-size: 20px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+#header-1{
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+    cursor: pointer;
+}
+#header-2{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    margin-right: 15px;
+}
+
+/* Contenu */
+#container{
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    position: relative;
+    top: -15vh;
+    left: -7vw;
+}
+#slide{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #f7f8a9;
+    border-radius: 50%;
+    transition: z-index 1 ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+#slide p{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif,Impact,;
+    color: #000;
+}
+#slide.active{
+    top: -20px;
+    left: -15px;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
+}
+#slide.active #imgSlide{
+    width: 120px;
+    height: 120px;
+}
+#imgSlide{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#prev{
+    position: absolute;
+    left: -180px;
+    top: 50px;
+    opacity: 0.7;
+}
+#next{
+    position: absolute;
+    left: 267px;
+    top: 50px;
+    opacity: 0.7;
+}
+#next:hover,#prev:hover{
+    opacity: 1;
+}
+
+/* Pied */
+center{
+    color: #fff;
+}
+
+@media screen and (max-width:1000px) {
+    #header-1,#header-2{
+        width: 49vw;
+    }
+    .menu{
+        left: -15vw;
+    }
+    #slide.active{
+        width: 170px;
+        height: 170px;
+    }
+    #slide.active #imgSlide{
+        width: 90px;
+        height: 90px;
+    }
+    #prev{
+        top: 20px;
+        left: -120px;
+    }
+    #next{
+        top: 20px;
+        left: 165px;
+    }
+}

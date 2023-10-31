@@ -1,0 +1,65 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url("../img/fond-mur-texture-beton-bleu-grunge-vintage-vignette.jpg");
+}
+
+.calendar {
+    max-width: 400px;
+    margin: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 1;
+    border: 1px solid;
+}
+
+#currentMonth {
+    font-size: 20px;
+    color: #c1234c;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.calendar-day {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(6, 42, 73);
+    color: #fff;
+    border: 2px solid #ccc;
+}
+
+.calendar-day:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.jour{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+}
